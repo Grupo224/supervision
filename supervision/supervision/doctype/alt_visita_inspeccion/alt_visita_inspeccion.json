@@ -1,0 +1,158 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SUP-VISITA-{####}",
+ "creation": "2026-10-27 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_datos_de_la_visita",
+  "obra",
+  "supervisor",
+  "fecha_hora",
+  "tipo_visita",
+  "etapa",
+  "estado",
+  "column_break",
+  "notas",
+  "section_checklist_de_campo",
+  "checklist"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_datos_de_la_visita",
+   "fieldtype": "Section Break",
+   "label": "Datos de la Visita"
+  },
+  {
+   "fieldname": "obra",
+   "fieldtype": "Link",
+   "label": "Obra",
+   "options": "Alt Supervision Obra",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "label": "Supervisor",
+   "options": "User",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fecha_hora",
+   "fieldtype": "Datetime",
+   "label": "Fecha y Hora",
+   "reqd": 1,
+   "in_list_view": 1,
+   "default": "Now"
+  },
+  {
+   "fieldname": "tipo_visita",
+   "fieldtype": "Select",
+   "label": "Tipo de Visita",
+   "options": "Inicial\nReinspección\nSeguimiento\nFinal",
+   "default": "Inicial"
+  },
+  {
+   "fieldname": "etapa",
+   "fieldtype": "Select",
+   "label": "Etapa",
+   "options": "Zanja\nInstalación de Tubería\nVálvulas y Registros\nPruebas\nInterconexión\nMateriales\nOtro"
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Borrador\nEn Revisión\nAprobada\nRechazada",
+   "in_list_view": 1,
+   "default": "Borrador"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "notas",
+   "fieldtype": "Small Text",
+   "label": "Notas"
+  },
+  {
+   "fieldname": "section_checklist_de_campo",
+   "fieldtype": "Section Break",
+   "label": "Checklist de Campo"
+  },
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Alt Inspeccion Item"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Alt Visita Inspeccion",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Coordinador de Supervisión",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Supervisor Estatal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Supervisor Federal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Consulta Supervisión",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0,
+ "title_field": "obra",
+ "search_fields": "obra,supervisor"
+}

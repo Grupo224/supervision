@@ -1,0 +1,169 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SUP-PRUEBA-{####}",
+ "creation": "2026-10-27 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_datos_de_la_prueba",
+  "obra",
+  "tramo",
+  "tipo_red",
+  "tipo_prueba",
+  "fecha",
+  "resultado",
+  "column_break",
+  "responsable",
+  "section_detalle",
+  "parametros_exigidos",
+  "mediciones",
+  "documentos"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_datos_de_la_prueba",
+   "fieldtype": "Section Break",
+   "label": "Datos de la Prueba"
+  },
+  {
+   "fieldname": "obra",
+   "fieldtype": "Link",
+   "label": "Obra",
+   "options": "Alt Supervision Obra",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "tramo",
+   "fieldtype": "Data",
+   "label": "Tramo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tipo_red",
+   "fieldtype": "Select",
+   "label": "Tipo de Red",
+   "options": "Agua Potable\nDrenaje",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "tipo_prueba",
+   "fieldtype": "Select",
+   "label": "Tipo de Prueba",
+   "options": "Presión Hidrostática\nEstanqueidad\nOtro",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "resultado",
+   "fieldtype": "Select",
+   "label": "Resultado",
+   "options": "Pendiente\nAprobada\nRechazada",
+   "in_list_view": 1,
+   "default": "Pendiente"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "responsable",
+   "fieldtype": "Link",
+   "label": "Responsable",
+   "options": "User"
+  },
+  {
+   "fieldname": "section_detalle",
+   "fieldtype": "Section Break",
+   "label": "Detalle"
+  },
+  {
+   "fieldname": "parametros_exigidos",
+   "fieldtype": "Small Text",
+   "label": "Parámetros Exigidos"
+  },
+  {
+   "fieldname": "mediciones",
+   "fieldtype": "Small Text",
+   "label": "Mediciones"
+  },
+  {
+   "fieldname": "documentos",
+   "fieldtype": "Attach",
+   "label": "Documentos"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Alt Prueba Red",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Coordinador de Supervisión",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Supervisor Estatal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Supervisor Federal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Consulta Supervisión",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0,
+ "title_field": "tramo",
+ "search_fields": "obra,tramo,tipo_red"
+}

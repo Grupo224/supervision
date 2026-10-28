@@ -1,0 +1,177 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SUP-OBRA-{####}",
+ "creation": "2026-10-27 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_datos_de_la_obra",
+  "project",
+  "tipo_supervision",
+  "tipo_obra",
+  "localidad",
+  "direccion",
+  "contratista",
+  "coordinador",
+  "estatus",
+  "column_break",
+  "fecha_inicio",
+  "fecha_fin",
+  "section_detalle",
+  "descripcion"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_datos_de_la_obra",
+   "fieldtype": "Section Break",
+   "label": "Datos de la Obra"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Obra (Project)",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "tipo_supervision",
+   "fieldtype": "Select",
+   "label": "Tipo de Supervisión",
+   "options": "Estatal\nFederal",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "tipo_obra",
+   "fieldtype": "Select",
+   "label": "Tipo de Obra",
+   "options": "Red de Agua Potable\nRed de Drenaje\nConstrucción de Baños",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "localidad",
+   "fieldtype": "Data",
+   "label": "Localidad",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Data",
+   "label": "Dirección"
+  },
+  {
+   "fieldname": "contratista",
+   "fieldtype": "Data",
+   "label": "Contratista"
+  },
+  {
+   "fieldname": "coordinador",
+   "fieldtype": "Link",
+   "label": "Coordinador",
+   "options": "User",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "estatus",
+   "fieldtype": "Select",
+   "label": "Estatus",
+   "options": "Planeada\nAsignada\nEn Inspección\nCon Observaciones\nEn Revisión\nAprobada\nRechazada\nCerrada",
+   "in_list_view": 1,
+   "default": "Planeada"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fecha_inicio",
+   "fieldtype": "Date",
+   "label": "Fecha de Inicio"
+  },
+  {
+   "fieldname": "fecha_fin",
+   "fieldtype": "Date",
+   "label": "Fecha de Fin"
+  },
+  {
+   "fieldname": "section_detalle",
+   "fieldtype": "Section Break",
+   "label": "Detalle"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Small Text",
+   "label": "Descripción"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Alt Supervision Obra",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Coordinador de Supervisión",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Supervisor Estatal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Supervisor Federal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Consulta Supervisión",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0,
+ "title_field": "project",
+ "search_fields": "project,localidad,tipo_obra"
+}

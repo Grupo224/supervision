@@ -1,0 +1,61 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "autoincrement",
+ "creation": "2026-10-27 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "concepto",
+  "especificacion_requerida",
+  "valor_observado",
+  "resultado",
+  "observacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "concepto",
+   "fieldtype": "Data",
+   "label": "Concepto",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "especificacion_requerida",
+   "fieldtype": "Data",
+   "label": "Especificación Requerida"
+  },
+  {
+   "fieldname": "valor_observado",
+   "fieldtype": "Data",
+   "label": "Valor Observado"
+  },
+  {
+   "fieldname": "resultado",
+   "fieldtype": "Select",
+   "label": "Resultado",
+   "options": "Conforme\nNo Conforme\nNo Aplica",
+   "in_list_view": 1,
+   "default": "Conforme"
+  },
+  {
+   "fieldname": "observacion",
+   "fieldtype": "Small Text",
+   "label": "Observación"
+  }
+ ],
+ "index_web_pages_for_search": 0,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Alt Inspeccion Item",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0
+}

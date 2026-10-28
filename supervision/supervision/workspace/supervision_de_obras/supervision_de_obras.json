@@ -1,0 +1,227 @@
+{
+ "charts": [],
+ "content": "[{\"id\": \"hdr\", \"type\": \"header\", \"data\": {\"text\": \"<span class=\\\"h4\\\"><b>Supervisión de Obras</b></span>\", \"col\": 12}}, {\"id\": \"sc0\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"🚧 Obras\", \"col\": 4}}, {\"id\": \"sc1\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"🧑🔧 Inspecciones\", \"col\": 4}}, {\"id\": \"sc2\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"⚠️ Observaciones\", \"col\": 4}}, {\"id\": \"sc3\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"🔬 Pruebas de Red\", \"col\": 4}}, {\"id\": \"sc4\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"🔗 Interconexiones\", \"col\": 4}}, {\"id\": \"sc5\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"📐 Especificaciones\", \"col\": 4}}, {\"id\": \"sc6\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"📎 Evidencias\", \"col\": 4}}, {\"id\": \"sc7\", \"type\": \"shortcut\", \"data\": {\"shortcut_name\": \"📁 Proyectos\", \"col\": 4}}, {\"id\": \"lk0\", \"type\": \"card\", \"data\": {\"card_name\": \"🏗️ Obras\", \"col\": 6}}, {\"id\": \"lk1\", \"type\": \"card\", \"data\": {\"card_name\": \"🔍 Operación\", \"col\": 6}}, {\"id\": \"lk2\", \"type\": \"card\", \"data\": {\"card_name\": \"🔧 Técnico (Redes)\", \"col\": 6}}, {\"id\": \"lk3\", \"type\": \"card\", \"data\": {\"card_name\": \"📚 Referencia\", \"col\": 6}}]",
+ "creation": "2026-10-27 00:00:00.000000",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "construction",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Supervisión de Obras",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "🏗️ Obras",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alt Supervision Obra",
+   "link_count": 0,
+   "link_to": "Alt Supervision Obra",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Project",
+   "link_count": 0,
+   "link_to": "Project",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "🔍 Operación",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alt Visita Inspeccion",
+   "link_count": 0,
+   "link_to": "Alt Visita Inspeccion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alt Observacion",
+   "link_count": 0,
+   "link_to": "Alt Observacion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "🔧 Técnico (Redes)",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alt Prueba Red",
+   "link_count": 0,
+   "link_to": "Alt Prueba Red",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alt Interconexion",
+   "link_count": 0,
+   "link_to": "Alt Interconexion",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "📚 Referencia",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alt Especificacion Obra",
+   "link_count": 0,
+   "link_to": "Alt Especificacion Obra",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "dependencies": "",
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Alt Evidencia",
+   "link_count": 0,
+   "link_to": "Alt Evidencia",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Supervisión de Obras",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "restrict_to_domain": "",
+ "roles": [],
+ "sequence_id": 200.0,
+ "shortcuts": [
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "format": "",
+   "label": "🚧 Obras",
+   "link_to": "Alt Supervision Obra",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "",
+   "label": "🧑🔧 Inspecciones",
+   "link_to": "Alt Visita Inspeccion",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "format": "",
+   "label": "⚠️ Observaciones",
+   "link_to": "Alt Observacion",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "format": "",
+   "label": "🔬 Pruebas de Red",
+   "link_to": "Alt Prueba Red",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Cyan",
+   "doc_view": "List",
+   "format": "",
+   "label": "🔗 Interconexiones",
+   "link_to": "Alt Interconexion",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "format": "",
+   "label": "📐 Especificaciones",
+   "link_to": "Alt Especificacion Obra",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Gray",
+   "doc_view": "List",
+   "format": "",
+   "label": "📎 Evidencias",
+   "link_to": "Alt Evidencia",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "",
+   "label": "📁 Proyectos",
+   "link_to": "Project",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Supervisión de Obras"
+}

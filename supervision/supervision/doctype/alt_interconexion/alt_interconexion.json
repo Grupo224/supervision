@@ -1,0 +1,144 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SUP-INTER-{####}",
+ "creation": "2026-10-27 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_datos_de_la_interconexión",
+  "obra",
+  "tramo",
+  "fecha",
+  "estado",
+  "column_break",
+  "verificacion_medidor",
+  "section_detalle",
+  "requerimiento_autorizacion",
+  "documento_autorizacion"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_datos_de_la_interconexión",
+   "fieldtype": "Section Break",
+   "label": "Datos de la Interconexión"
+  },
+  {
+   "fieldname": "obra",
+   "fieldtype": "Link",
+   "label": "Obra",
+   "options": "Alt Supervision Obra",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "tramo",
+   "fieldtype": "Data",
+   "label": "Tramo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha",
+   "fieldtype": "Date",
+   "label": "Fecha"
+  },
+  {
+   "fieldname": "estado",
+   "fieldtype": "Select",
+   "label": "Estado",
+   "options": "Pendiente\nAutorizada\nConcluida",
+   "in_list_view": 1,
+   "default": "Pendiente"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "verificacion_medidor",
+   "fieldtype": "Select",
+   "label": "Verificación de Medidor",
+   "options": "Verificado\nNo Verificado\nCon Toma Directa"
+  },
+  {
+   "fieldname": "section_detalle",
+   "fieldtype": "Section Break",
+   "label": "Detalle"
+  },
+  {
+   "fieldname": "requerimiento_autorizacion",
+   "fieldtype": "Small Text",
+   "label": "Requerimiento de Autorización"
+  },
+  {
+   "fieldname": "documento_autorizacion",
+   "fieldtype": "Attach",
+   "label": "Documento de Autorización"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Alt Interconexion",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Coordinador de Supervisión",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Supervisor Estatal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Supervisor Federal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Consulta Supervisión",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0,
+ "title_field": "tramo",
+ "search_fields": "obra,tramo"
+}

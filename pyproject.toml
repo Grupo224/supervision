@@ -1,0 +1,12 @@
+[project]
+name = "supervision"
+authors = [{ name = "Altoplano", email = "soporte@altoplano.com" }]
+description = "Supervisión de obras de infraestructura hidráulica (estatal y federal)"
+dynamic = ["version"]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["erpnext"]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"

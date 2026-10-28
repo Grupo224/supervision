@@ -1,0 +1,129 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SUP-ESPEC-{####}",
+ "creation": "2026-10-27 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_especificación",
+  "obra",
+  "concepto",
+  "material_exigido",
+  "diametro_medida",
+  "unidad",
+  "column_break",
+  "referencia_plano"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_especificación",
+   "fieldtype": "Section Break",
+   "label": "Especificación"
+  },
+  {
+   "fieldname": "obra",
+   "fieldtype": "Link",
+   "label": "Obra",
+   "options": "Alt Supervision Obra",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "concepto",
+   "fieldtype": "Data",
+   "label": "Concepto",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "material_exigido",
+   "fieldtype": "Data",
+   "label": "Material Exigido"
+  },
+  {
+   "fieldname": "diametro_medida",
+   "fieldtype": "Data",
+   "label": "Diámetro / Medida"
+  },
+  {
+   "fieldname": "unidad",
+   "fieldtype": "Data",
+   "label": "Unidad"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "referencia_plano",
+   "fieldtype": "Data",
+   "label": "Referencia a Plano / Contrato"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Alt Especificacion Obra",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Coordinador de Supervisión",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Supervisor Estatal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Supervisor Federal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Consulta Supervisión",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0,
+ "title_field": "concepto",
+ "search_fields": "obra,concepto,material_exigido"
+}

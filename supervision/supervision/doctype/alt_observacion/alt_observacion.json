@@ -1,0 +1,168 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:SUP-OBS-{####}",
+ "creation": "2026-10-27 00:00:00.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_datos_de_la_observación",
+  "obra",
+  "inspeccion",
+  "concepto",
+  "gravedad",
+  "estatus",
+  "column_break",
+  "responsable_correccion",
+  "fecha_compromiso",
+  "section_detalle",
+  "descripcion",
+  "evidencia_antes",
+  "evidencia_despues"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_datos_de_la_observación",
+   "fieldtype": "Section Break",
+   "label": "Datos de la Observación"
+  },
+  {
+   "fieldname": "obra",
+   "fieldtype": "Link",
+   "label": "Obra",
+   "options": "Alt Supervision Obra",
+   "reqd": 1
+  },
+  {
+   "fieldname": "inspeccion",
+   "fieldtype": "Link",
+   "label": "Inspección",
+   "options": "Alt Visita Inspeccion",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "concepto",
+   "fieldtype": "Data",
+   "label": "Concepto",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "gravedad",
+   "fieldtype": "Select",
+   "label": "Gravedad",
+   "options": "Baja\nMedia\nAlta\nCrítica",
+   "in_list_view": 1,
+   "default": "Media"
+  },
+  {
+   "fieldname": "estatus",
+   "fieldtype": "Select",
+   "label": "Estatus",
+   "options": "Abierta\nEn Corrección\nCorregida\nCerrada",
+   "in_list_view": 1,
+   "default": "Abierta"
+  },
+  {
+   "fieldname": "column_break",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "responsable_correccion",
+   "fieldtype": "Link",
+   "label": "Responsable de Corrección",
+   "options": "User"
+  },
+  {
+   "fieldname": "fecha_compromiso",
+   "fieldtype": "Date",
+   "label": "Fecha Compromiso"
+  },
+  {
+   "fieldname": "section_detalle",
+   "fieldtype": "Section Break",
+   "label": "Detalle"
+  },
+  {
+   "fieldname": "descripcion",
+   "fieldtype": "Text Editor",
+   "label": "Descripción"
+  },
+  {
+   "fieldname": "evidencia_antes",
+   "fieldtype": "Attach Image",
+   "label": "Evidencia Antes"
+  },
+  {
+   "fieldname": "evidencia_despues",
+   "fieldtype": "Attach Image",
+   "label": "Evidencia Después"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "links": [],
+ "modified": "2026-10-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Supervision",
+ "name": "Alt Observacion",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "role": "System Manager",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "delete": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Coordinador de Supervisión",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1,
+   "email": 1,
+   "share": 1
+  },
+  {
+   "role": "Supervisor Estatal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Supervisor Federal",
+   "read": 1,
+   "write": 1,
+   "create": 1,
+   "report": 1,
+   "export": 1,
+   "print": 1
+  },
+  {
+   "role": "Consulta Supervisión",
+   "read": 1,
+   "report": 1,
+   "print": 1,
+   "export": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 0,
+ "title_field": "concepto",
+ "search_fields": "concepto,obra"
+}
